@@ -71,7 +71,7 @@ MoneyRails.configure do |config|
   # BigDecimal::ROUND_CEILING,
   # BigDecimal::ROUND_FLOOR
   #
-  # set to BigDecimal::ROUND_HALF_EVEN by default
+  # set to BigDecimal::ROUND_HALF_UP by default
   #
   # config.rounding_mode = BigDecimal::ROUND_HALF_UP
 
