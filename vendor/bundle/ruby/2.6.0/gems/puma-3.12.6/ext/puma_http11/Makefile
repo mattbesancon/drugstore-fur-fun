@@ -12,12 +12,12 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Users/matthieubesancon/.rbenv/versions/2.6.0/include/ruby-2.6.0
+topdir = /Users/matthieubesancon/.rbenv/versions/2.6.3/include/ruby-2.6.0
 hdrdir = $(topdir)
-arch_hdrdir = /Users/matthieubesancon/.rbenv/versions/2.6.0/include/ruby-2.6.0/x86_64-darwin20
+arch_hdrdir = /Users/matthieubesancon/.rbenv/versions/2.6.3/include/ruby-2.6.0/x86_64-darwin20
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/Users/matthieubesancon/.rbenv/versions/2.6.0
+prefix = $(DESTDIR)/Users/matthieubesancon/.rbenv/versions/2.6.3
 rubysitearchprefix = $(rubylibprefix)/$(sitearch)
 rubyarchprefix = $(rubylibprefix)/$(arch)
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
@@ -31,8 +31,8 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
-sitearchdir = $(DESTDIR)./.gem.20201216-64832-300ii4
-sitelibdir = $(DESTDIR)./.gem.20201216-64832-300ii4
+sitearchdir = $(DESTDIR)./.gem.20210507-8689-19ckf0p
+sitelibdir = $(DESTDIR)./.gem.20210507-8689-19ckf0p
 sitedir = $(rubylibprefix)/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -86,10 +86,10 @@ CCDLFLAGS = -fno-common
 CFLAGS   = $(CCDLFLAGS) $(cflags)  -fno-common -pipe $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
-CPPFLAGS = -DHAVE_OPENSSL_BIO_H -I/Users/matthieubesancon/.rbenv/versions/2.6.0/openssl/include -I/Users/matthieubesancon/.rbenv/versions/2.6.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
+CPPFLAGS = -DHAVE_OPENSSL_BIO_H -I/Users/matthieubesancon/.rbenv/versions/2.6.3/openssl/include -I/Users/matthieubesancon/.rbenv/versions/2.6.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
 CXXFLAGS = $(CCDLFLAGS) $(cxxflags) $(ARCH_FLAG)
-ldflags  = -L. -L/Users/matthieubesancon/.rbenv/versions/2.6.0/lib  -fstack-protector-strong -L/usr/local/lib
-dldflags = -L/Users/matthieubesancon/.rbenv/versions/2.6.0/lib  -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
+ldflags  = -L. -L/Users/matthieubesancon/.rbenv/versions/2.6.3/lib  -fstack-protector-strong -L/usr/local/lib
+dldflags = -L/Users/matthieubesancon/.rbenv/versions/2.6.3/lib  -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
 ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
 LDSHARED = $(CC) -dynamic -bundle
@@ -124,8 +124,8 @@ TOUCH = exit >
 #### End of system configuration section. ####
 
 preload = 
-libpath = . $(libdir) /Users/matthieubesancon/.rbenv/versions/2.6.0/openssl/lib
-LIBPATH =  -L. -L$(libdir) -L/Users/matthieubesancon/.rbenv/versions/2.6.0/openssl/lib
+libpath = . $(libdir) /Users/matthieubesancon/.rbenv/versions/2.6.3/openssl/lib
+LIBPATH =  -L. -L$(libdir) -L/Users/matthieubesancon/.rbenv/versions/2.6.3/openssl/lib
 DEFFILE = 
 
 CLEANFILES = mkmf.log
