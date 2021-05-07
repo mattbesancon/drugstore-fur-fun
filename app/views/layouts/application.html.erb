@@ -15,7 +15,6 @@
     <%= render 'shared/navbar' %>
     <%= yield %>
     <%= render 'shared/footer' %>
-    <%= javascript_pack_tag "application" %>
-    <%= stylesheet_pack_tag "application" %>
+    <%= javascript_pack_tag "application", turbolink_track: true %>
   </body>
 </html>

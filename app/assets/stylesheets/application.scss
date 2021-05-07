@@ -13,7 +13,6 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap/scss/bootstrap";
 
 // Graphical variables
 @import "config/fonts";
@@ -29,4 +28,3 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
-
