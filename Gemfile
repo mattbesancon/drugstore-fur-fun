@@ -55,7 +55,7 @@ gem 'carrierwave', '~> 1.2'
 gem 'pundit'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
-gem 'nokogiri', '~> 1.10.4'
+gem 'nokogiri', '~> 1.11.4'
 gem "loofah", ">= 2.3.1"
 gem 'money-rails'
 gem 'fog-aws'
