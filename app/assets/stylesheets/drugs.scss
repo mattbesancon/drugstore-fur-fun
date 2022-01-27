@@ -1,6 +1,7 @@
 // Place all the styles related to the drugs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 .footer {
   background: #F4F4F4;
   display: flex;
@@ -11,6 +12,7 @@
   margin-top: 150px;
   position: relative;
 }
+
 .footer-links {
   display: flex;
   align-items: center;
@@ -20,6 +22,7 @@
   margin-right: -50%;
   transform: translate(-50%, -50%)
 }
+
 .footer-links a {
   color: black;
   opacity: 0.15;
@@ -27,36 +30,45 @@
   font-size: 24px;
   padding: 0px 10px;
 }
+
 .footer-links a:hover {
   opacity: 1;
 }
+
 .card {
   margin-top: 20px;
 }
+
 th {
   text-align: left;
   padding: 15px;
   vertical-align: top;
 }
+
 .container-options {
   text-align: center;
   margin: 40px auto;
 }
+
 span + span {
   margin-left: 300px;
 }
+
 .reviews-container {
   text-align: center;
   margin: 40px auto;
 }
+
 .main-container {
   text-align: center;
   width: 800px;
   margin: 40px auto;
 }
+
 .row {
   margin-top: 20px;
 }
+
 .card-product {
   overflow: hidden;
   height: 120px;
@@ -66,6 +78,7 @@ span + span {
   align-items: center;
   margin-top: 40px;
 }
+
 .table {
   text-align: center;
   margin: 40px auto;
@@ -88,6 +101,7 @@ span + span {
 .card-product .card-product-infos {
   padding: 16px;
 }
+
 .btn-light {
   background-color: #6B72E1;
   color: white;
@@ -95,6 +109,7 @@ span + span {
   border-radius: 2px;
   box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
 }
+
 .btn-light:hover {
   background-color: black;
   color: white;

@@ -1,6 +1,6 @@
 <div class="main-container">
   <div class="card-product">
-    <img><%= cl_image_tag @drug.photo, height: 300, width: 400, crop: :fill%></img>
+    <%= cl_image_tag @drug.photo, height: 300, width: 400, crop: :fill%>
     <div class="card-product-infos">
       <h2><%= @drug.name %></h2>
     </div>
