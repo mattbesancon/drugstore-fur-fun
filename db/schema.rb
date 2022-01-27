@@ -36,11 +36,6 @@ ActiveRecord::Schema.define(version: 2020_04_29_150650) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
-  create_table "decimals", id: :integer, default: nil, force: :cascade do |t|
-    t.integer "number1", null: false
-    t.integer "number2", null: false
-  end
-
   create_table "drugs", force: :cascade do |t|
     t.string "name"
     t.text "content"
