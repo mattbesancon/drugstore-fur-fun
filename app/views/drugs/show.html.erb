@@ -1,11 +1,10 @@
 <div class="main-container">
   <div class="card-product">
-    <img><%= cl_image_tag @drug.photo, height: 300, width: 400, crop: :fill%></img>
+    <%= cl_image_tag @drug.photo, height: 300, width: 400, crop: :fill%>
     <div class="card-product-infos">
       <h2><%= @drug.name %></h2>
     </div>
   </div>
-
 
   <div class="row">
     <div class="col-sm-12">
@@ -13,16 +12,25 @@
         <tr>
           <th>Drug</th>
           <th>Description</th>
-          <th>Price in euros</th>
+          <th>Amount</th>
         </tr>
         <tr>
           <td><%= @drug.name %></td>
           <td><%= @drug.content %></td>
-          <td><%= @drug.price %></td>
+          <td><%= humanized_money_with_symbol(@drug.price) %></td>
         </tr>
       </table>
     </div>
   </div>
+
+  <div class="purchase-container">
+    <%= form_tag orders_path do %>
+      <%= hidden_field_tag 'drug_id', @drug.id %>
+      <%= submit_tag 'Purchase', class: "btn btn-outline-primary" %>
+    <% end %>
+  </div>
+
+<br>
 
   <div class="reviews-container">
     <% if @drug.reviews.empty? %>

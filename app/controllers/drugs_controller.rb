@@ -1,6 +1,4 @@
 class DrugsController < ApplicationController
-  skip_before_action :authenticate_user!, only: :home
-
   def index
     @drugs = Drug.all
   end
