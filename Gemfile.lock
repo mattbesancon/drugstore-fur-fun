@@ -160,7 +160,7 @@ GEM
     mime-types-data (3.2021.0225)
     mini_magick (4.11.0)
     mini_mime (1.1.0)
-    mini_portile2 (2.4.0)
+    mini_portile2 (2.8.0)
     mini_racer (0.4.0)
       libv8-node (~> 15.14.0.0)
     minitest (5.14.4)
@@ -180,14 +180,16 @@ GEM
     net-ssh (6.1.0)
     netrc (0.11.0)
     nio4r (2.5.7)
-    nokogiri (1.10.10)
-      mini_portile2 (~> 2.4.0)
+    nokogiri (1.13.9)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
     orm_adapter (0.5.0)
     pg (1.2.3)
     public_suffix (4.0.6)
     puma (3.12.6)
     pundit (2.1.0)
       activesupport (>= 3.0.0)
+    racc (1.6.0)
     rack (2.2.3)
     rack-proxy (0.6.5)
       rack
@@ -329,7 +331,7 @@ DEPENDENCIES
   mini_magick (~> 4.8)
   mini_racer
   money-rails
-  nokogiri (~> 1.10.4)
+  nokogiri (~> 1.13.9)
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
   pundit
